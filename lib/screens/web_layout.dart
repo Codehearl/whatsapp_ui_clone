@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui_clone/screens/contacts_list.dart';
+import 'package:whatsapp_ui_clone/screens/web_search_bar.dart';
+import 'package:whatsapp_ui_clone/screens/web_status_bar.dart';
 
 class WebLayout extends StatelessWidget {
   const WebLayout({super.key});
@@ -16,9 +18,12 @@ class WebLayout extends StatelessWidget {
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: const [
-                  //TODO appbar
-                  //TODO searchbar
-                  ContactList()
+                  WebStatusBar(),
+                  WebSearchBar(),
+                  Padding(
+                    padding: EdgeInsets.only(top:8.0),
+                    child: ContactList(),
+                  )
                 ]),
           ),
         ),
