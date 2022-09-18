@@ -10,7 +10,7 @@ class WebStatusBar extends StatelessWidget {
       elevation: 0,
       backgroundColor: webAppBarColor,
       leading: const Padding(
-        padding:  EdgeInsets.symmetric(horizontal: 13,vertical: 5),
+        padding:  EdgeInsets.only(left: 18,top: 5),
         child:  CircleAvatar(
           radius: 5,
             backgroundImage: NetworkImage(

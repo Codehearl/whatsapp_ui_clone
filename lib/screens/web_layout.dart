@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui_clone/screens/contacts_list.dart';
-import 'package:whatsapp_ui_clone/screens/web_search_bar.dart';
-import 'package:whatsapp_ui_clone/screens/web_status_bar.dart';
+import 'package:whatsapp_ui_clone/components/web_search_bar.dart';
+import 'package:whatsapp_ui_clone/components/web_status_bar.dart';
 
 class WebLayout extends StatelessWidget {
   const WebLayout({super.key});

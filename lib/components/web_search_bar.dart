@@ -26,7 +26,7 @@ class _WebSearchBarState extends State<WebSearchBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 50,
+        height:MediaQuery.of(context).size.height * 0.05,
         padding:const  EdgeInsets.only(left:18,right :20, top:5),
         color: backgroundColor,
         child: Row(
@@ -42,33 +42,32 @@ class _WebSearchBarState extends State<WebSearchBar> {
                   }
                 },
                 child: TextField(
-                  textAlign: TextAlign.center,
+                  
                   onChanged: null, //TODO Implement Search 
                   
                   decoration: InputDecoration(
+                    labelStyle: const TextStyle(fontSize: 14,) ,
+                    contentPadding:const  EdgeInsets.only(left:20),
                     filled: true,
-                    hintStyle: const TextStyle(fontSize: 16,),
-                    fillColor: searchBarColor,
+                    hintStyle: const TextStyle(fontSize: 14,),
+                    fillColor: webAppBarColor,
                     hintText: "Search or start new chat",
-                    prefixIcon: Padding(
-                      padding: const EdgeInsets.only(left: 5),
-                      child: IconButton(
-                          onPressed: () {
-                            if (myFocusNode.hasFocus){
-                                myFocusNode.unfocus();
-                            }
-                            else{
-                              
-                            }
+                    prefixIcon: IconButton(
+                        onPressed: () {
+                          if (myFocusNode.hasFocus){
+                              myFocusNode.unfocus();
+                          }
+                          else{
                             
-                            
-                          },
-                          icon: Icon(myFocusNode.hasFocus
-                              ? Icons.arrow_back
-                              : Icons.search_sharp)),
-                    ),
+                          }
+                          
+                          
+                        },
+                        icon: Icon(myFocusNode.hasFocus
+                            ? Icons.arrow_back
+                            : Icons.search_sharp, size: 14,)),
                     border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(18),
+                        borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide.none),
                   ),
                 ),
