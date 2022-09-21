@@ -35,16 +35,14 @@ class _MobileLayoutState extends State<MobileLayout> with SingleTickerProviderSt
           actions: [
             IconButton(
                 onPressed: () => alertDialog(context),
-                icon: const Icon(Icons.search)),
+                icon: const Icon(Icons.search,color:iconColor)),
             const PopupMenu(),
           ],
           bottom: TabBar(
             controller: _tabController,
-              onTap: ((value) {
-                alertDialog(context);
-              }),
+             
               isScrollable: true,
-              unselectedLabelColor: Colors.grey,
+              unselectedLabelColor: iconColor,
               labelColor: tabColor,
               indicatorColor: tabColor,
               labelStyle: const TextStyle(
@@ -77,5 +75,6 @@ class _MobileLayoutState extends State<MobileLayout> with SingleTickerProviderSt
             ),
           ),
         ));
+        
   }
 }

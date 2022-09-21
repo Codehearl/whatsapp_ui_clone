@@ -9,7 +9,9 @@ class PopupMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PopupMenuButton(itemBuilder: (context) =>
+    return PopupMenuButton(
+      icon: const Icon(Icons.more_vert,color:iconColor),
+      itemBuilder: (context) =>
       [
         const PopupMenuItem(
           value: 1,

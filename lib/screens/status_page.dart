@@ -31,7 +31,7 @@ class StatusPage extends StatelessWidget {
                   children: [
                     ListTile(
                       leading:  Container(
-                        padding: const EdgeInsets.all(1),
+                        padding: const EdgeInsets.all(2),
                         decoration:const  BoxDecoration(
                           shape: BoxShape.circle,
                           color: tabColor
