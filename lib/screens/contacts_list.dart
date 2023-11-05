@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_ui_clone/colors.dart';
-import 'package:whatsapp_ui_clone/components/alert.dart';
-import 'package:whatsapp_ui_clone/components/popup_menu.dart';
+
+
 import 'package:whatsapp_ui_clone/info.dart';
 import 'package:whatsapp_ui_clone/screens/chat_sceen.dart';
 

@@ -130,3 +130,5 @@ var messages = [
     "time": "11:20 am",
   },
 ];
+
+//TODO change to dummy api

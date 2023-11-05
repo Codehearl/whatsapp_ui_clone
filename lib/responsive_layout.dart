@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 
 class ResponsiveLayout extends StatelessWidget {
+  
   final Widget webLayout;
   final Widget mobileLayout;
   const ResponsiveLayout(
@@ -9,8 +10,9 @@ class ResponsiveLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(builder: (context, constraints) {
-      if (constraints.maxWidth > 800) {
+    var isLandscaped = MediaQuery.of(context).orientation == Orientation.landscape;
+    return OrientationBuilder(builder: (context, rientation) {
+      if (isLandscaped) {
         return webLayout;
       } else {
         return mobileLayout;

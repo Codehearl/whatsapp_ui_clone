@@ -104,7 +104,6 @@ class _ChatScreenState extends State<ChatScreen> {
                         if (_textEditingController.text.isNotEmpty) {
                           setState(() {
                             _isEdited = true;
-                            
                           });
                         }
                       },
@@ -160,7 +159,8 @@ class _ChatScreenState extends State<ChatScreen> {
                                 messages.add({
                                   "isMe": true,
                                   "text": _textEditingController.text,
-                                  "time": DateTime.now().hour.toString() + ":"+ DateTime.now().minute.toString()
+                                  "time":
+                                      "${DateTime.now().hour.toString()} ${DateTime.now().minute.toString()}"
                                 });
                                 _textEditingController.clear();
                               });

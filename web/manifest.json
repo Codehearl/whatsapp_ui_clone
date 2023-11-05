@@ -1,6 +1,6 @@
 {
-    "name": "whatsapp_ui_clone",
-    "short_name": "whatsapp_ui_clone",
+    "name": "whatsapp_ui",
+    "short_name": "whatsapp_ui",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

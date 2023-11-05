@@ -14,7 +14,7 @@ class WebStatusBar extends StatelessWidget {
         child:  CircleAvatar(
           radius: 5,
             backgroundImage: NetworkImage(
-                "https://pps.whatsapp.net/v/t61.24694-24/294576377_1270245143717279_859497102651956426_n.jpg?ccb=11-4&oh=01_AVwit0XZyGhCsyEjlyTLWyHLuCaQFQ_u4cclzS9cyl3Gog&oe=6330E8C8")),
+                'https://images.unsplash.com/photo-1619194617062-5a61b9c6a049?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60')),
       ),
     actions: const [
         IconButton(onPressed: null,//TODO Implement pop up menu
