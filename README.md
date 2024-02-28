@@ -19,7 +19,5 @@ Full Stack Whatsapp Clone with Flutter, Firebase & Riverpod 2.0!
 
 **Client**: Flutter, Riverpod
     
-## Feedback
 
-If you have any feedback, please reach out to me at namanrivaan@gmail.com
 
